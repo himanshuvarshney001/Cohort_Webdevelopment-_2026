@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z =index</title>
+    <style>
+        body{
+            font-size: 100%;
+            background-color: #1f1f1f;
+            width: 50%;
+            margin: auto;
+        }
+        .box
+        {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            position: fixed;
+            padding: 10px 0 0 10px;
+        }
+        .first
+        {
+            top: 46%;
+            left: 42%;
+            background-color: #9F2BC1;
+            z-index: 3;
+            transition: 1s ease-in;
+        }
+        .second
+        {
+            top: 40%;
+            left: 45%;
+            background-color: #c772e0;
+            z-index: 2;
+            transition: 1s ease-in;
+        }
+        .third
+        {
+            top: 33%;
+            left: 48%;
+            background-color: #d090e4;
+            z-index: 1;
+            transition: 1s ease-in;
+        }
+        .first:hover
+        {
+            background-color: aqua;
+        }
+        .second:hover
+        {
+            background-color: aquamarine;
+        }
+        .third:hover
+        {
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        
+        <div class="box-first first box">z-index-3</div>
+        <div class="box-second box second">z-index-2</div>
+        <div class="box-third box third">z-index-1</div>
+        <div class="box-forth box forth">z-index</div>
+        <div class="box-fifth box fifth">z-iz-index-1ndex -1</div>
+</body>
+</html>

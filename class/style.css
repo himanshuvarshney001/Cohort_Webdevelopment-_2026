@@ -1,0 +1,44 @@
+*{
+    background-color: black;
+    color: white;
+}
+.box
+{
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 150px;
+    height: 70px;
+    background-color: grey;
+    margin: 4px;
+    padding: 12px;
+}  
+.box
+{
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+}
+.parent
+{
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid white;
+    height: 200px;
+    background-color: rgb(97, 97, 241);
+}
+.parent,div{
+    border: 2px solid white;
+    border-radius: 4px;
+    margin: 10px;
+}
+.one
+{
+    position: absolute;
+    top: 15px;
+    left: px;
+}
+.two
+{
+    position: fixed; 
+}
