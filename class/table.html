@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+  </head>
+  <body>
+    <table border="2px solid black" cellpadding="10px">
+      <caption>
+        <h1>this row span table</h1>
+      </caption>
+      <tr>
+        <th rowspan="5">chohort</th>
+        <th>id</th>
+        <th>name</th>
+        <th>course</th>
+        <th>payment</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>himanshu</td>
+        <td>web dev</td>
+        <td>online</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>himanshu</td>
+        <td>web dev</td>
+        <td>online</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>himanshu</td>
+        <td>web dev</td>
+        <td>online</td>
+      </tr>
+    </table>
+    <hr />
+
+    <table border="1" cellpadding="10">
+      <caption>
+        <h2>Student Marks Report</h2>
+      </caption>
+      <!-- Grouping and styling columns -->
+      <colgroup>
+        <col style="background-color: lightgray" />
+        <!-- Roll No column -->
+        <col style="background-color: lightyellow" />
+        <!-- Name column -->
+        <col style="background-color: lightblue" />
+        <!-- Math column -->
+        <col style="background-color: lightgreen" />
+        <!-- Science column -->
+        <col style="background-color: gainsboro" />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Math</th>
+          <th>Science</th>
+          <th>hindi</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>1</td>
+        <td>Rahul</td>
+        <td>85</td>
+        <td>90</td>
+        <td>90</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Anita</td>
+        <td>78</td>
+        <td>88</td>
+        <td>90</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Vikram</td>
+        <td>92</td>
+        <td>95</td>
+        <td>90</td>
+      </tr>
+    </table>
+    <hr />
+    <table border="1" cellpadding="10">
+      <!-- Table Head -->
+      <caption>
+        <h1>Producition departement</h1>
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity Sold</th>
+          <th>Price per Unit</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <tr>
+          <td>Laptop</td>
+          <td>5</td>
+          <td>50000</td>
+          <td>250000</td>
+        </tr>
+        <tr>
+          <td>Mobile</td>
+          <td>10</td>
+          <td>20000</td>
+          <td>200000</td>
+        </tr>
+        <tr>
+          <td>Tablet</td>
+          <td>7</td>
+          <td>15000</td>
+          <td>105000</td>
+        </tr>
+      </tbody>
+
+      <!-- Table Footer -->
+      <tfoot>
+        <tr>
+          <th colspan="3">Grand Total</th>
+          <th>555000</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Product List by Category</h2>
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Category</th>
+        <th>Product Name</th>
+        <th>Price</th>
+      </tr>
+
+      <!-- Electronics Category -->
+      <tr>
+        <td rowspan="3">Electronics</td>
+        <td>Laptop</td>
+        <td>50000</td>
+      </tr>
+      <tr>
+        <td>Mobile</td>
+        <td>20000</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>15000</td>
+      </tr>
+
+      <!-- Furniture Category -->
+      <tr>
+        <td rowspan="2">Furniture</td>
+        <td>Chair</td>
+        <td>2000</td>
+      </tr>
+      <tr>
+        <td>Table</td>
+        <td>5000</td>
+      </tr>
+    </table>
+    <hr />
+    <table border="1" cellpadding="10">
+      <!-- Caption -->
+      <caption>
+        <strong>ChaiCode - Web Development Cohort 2026 Overview</strong>
+      </caption>
+
+      <!-- Column Grouping -->
+      <colgroup>
+        <col style="background-color: lightgray" />
+        <col style="background-color: lightyellow" />
+        <col style="background-color: lightblue" />
+        <col style="background-color: lightgreen" />
+        <col style="background-color: lightpink" />
+      </colgroup>
+
+      <!-- Table Header -->
+      <thead>
+        <tr>
+          <th>Track</th>
+          <th>Module</th>
+          <th>Duration (Weeks)</th>
+          <th>Mentor</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <!-- Frontend Track -->
+        <tr>
+          <th rowspan="3">Frontend</th>
+          <td>HTML & Basics</td>
+          <td>2</td>
+          <td rowspan="3">Hitesh Sir</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>CSS & Responsive Design</td>
+          <td>3</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>JavaScript Fundamentals</td>
+          <td>4</td>
+          <td>Ongoing</td>
+        </tr>
+
+        <!-- Backend Track -->
+        <tr>
+          <th rowspan="2">Backend</th>
+          <td>Node.js & Express</td>
+          <td>4</td>
+          <td rowspan="2">Piyush Sir</td>
+          <td>Upcoming</td>
+        </tr>
+        <tr>
+          <td>Database (MongoDB)</td>
+          <td>3</td>
+          <td>Upcoming</td>
+        </tr>
+      </tbody>
+
+      <!-- Table Footer -->
+      <tfoot>
+        <tr>
+          <th colspan="2">Total Modules</th>
+          <th>5 Modules</th>
+          <th colspan="2">Cohort Year: 2026</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

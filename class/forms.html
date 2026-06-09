@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action=".abc">
+      <label
+        ><input
+          type="text"
+          placeholder="Enter name"
+          style="background-color: antiquewhite; padding: 8px" /></label
+      ><br />
+      <button type="submit">submit</button>
+    </form>
+    <br />
+    <hr />
+    <form action="#" method="post">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+        required
+      />
+      <br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+        required
+      />
+      <br /><br />
+
+      <label for="number">Enter number:</label>
+      <input type="number" id="number" name="number" />
+      <br /><br />
+
+      <label for="date">Enter date:</label>
+      <input type="date" id="date" name="date" />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <br /><br />
+    <hr />
+    <form action="">
+      <label for="">
+        <textarea name="" id="" rows="5" cols="50"></textarea>
+      </label>
+    </form>
+    <br />
+    <hr />
+
+    <form action="#" method="post">
+      <!-- 🔘 Radio Buttons (Single Choice) -->
+      <h3>Select Your Gender (Single Choice)</h3>
+
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label>
+
+      <br /><br />
+
+      <!-- ☑️ Checkboxes (Multiple Choice) -->
+      <h3>Select Your Hobbies (Multiple Choice)</h3>
+
+      <input type="checkbox" id="coding" name="hobbies" value="Coding" />
+      <label for="coding">Coding</label>
+
+      <input type="checkbox" id="music" name="hobbies" value="Music" />
+      <label for="music">Music</label>
+
+      <input type="checkbox" id="sports" name="hobbies" value="Sports" />
+      <label for="sports">Sports</label>
+
+      <br /><br />
+
+      <!-- 📋 Select Dropdown -->
+      <h3>Select Your Country</h3>
+
+      <select name="country">
+        <option value="">-- Select Country --</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+      </select>
+
+      <br /><br />
+
+      <!-- 📋 Multiple Select Dropdown -->
+      <h3>Select Skills (Multiple Select)</h3>
+
+      <select name="skills" multiple>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="React">React</option>
+      </select>
+
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <br /><br />
+    <hr />
+    <form action="#">
+      <label
+        >Name:
+        <input
+          type="text"
+          minlength="10"
+          maxlength="20"
+          required
+          placeholder="Enter Name"
+      /></label>
+      <button type="submit">Submit</button>
+    </form>
+    <br /><br />
+    <hr />
+    <form action="#">
+      <label for="">Upload photo: <input type="file" accept="jpg" /></label>
+    </form>
+    <br /><br />
+    <hr />
+    <form action="#">
+      <label>Choose an icecream flavours</label>
+      <input list="iceList" placeholder="choose icecream" />
+      <datalist id="iceList">
+        <option>Vanilla</option>
+        <option value="butterscotch"></option>
+        <option value="matka"></option>
+      </datalist>
+    </form>
+    <br /><br />
+    <hr />
+
+    <form action="/submit_page" method="POST">
+      <!-- Input fields go here -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+
+      <button type="submit">Submit</button>
+    </form>
+    <br /><br />
+    <hr />
+
+    <form action="/submit_ser" method="post">
+      <fieldset>
+        <label for="">Enter your name</label>
+        <input type="text" placeholder="Enter name here" required /><br /><br />
+        <label for="">Enter course name</label>
+        <input type="text" placeholder="Courese name" required /><br /><br />
+        <label for="">Email</label>
+        <input type="email" placeholder="Email" required />
+      </fieldset>
+      <input type="radio" name="gen" />
+      <label for="">Male</label>
+      <input type="radio" name="gen" />
+      <label for="">Female</label><br /><br />
+      <label for="">Your are not a robot</label>
+      <input type="checkbox" required /><br /><br />
+
+      <label for="">Select teacher</label>
+      <select name="" id="">
+        <option selected>Favorite teacher</option>
+        <option value="">piyush garg</option>
+        <option value="">Hitesh sir</option>
+        <option value="">Aakash gandle</option></select
+      ><br /><br />
+      <textarea name="" id="" rows="5" cols="30"></textarea><br /><br />
+      <label for="">Upload photo: <input type="file" accept="jpg" /></label
+      ><br /><br />
+      <label>Choose an icecream flavours</label>
+      <input list="iceList" placeholder="choose icecream" />
+      <datalist id="iceList">
+        <option>Vanilla</option>
+        <option value="butterscotch"></option>
+        <option value="matka"></option>
+      </datalist>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

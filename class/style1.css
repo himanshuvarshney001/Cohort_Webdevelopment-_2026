@@ -1,0 +1,125 @@
+body {
+  background-color: #121212;
+  /* background: linear-gradient(90deg, #111111, #1a1a1a); */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.cho {
+  color: #333333;
+  font-size: 10px;
+}
+.navbar {
+  background-color: #d5d5d5d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 12px auto;
+  padding: 1px 20px;
+  border-radius: 8px;
+  height: 40px;
+}
+
+.nav-link {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link a {
+  color: #333333;
+  text-decoration: none;
+  padding: 1px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-weight: 600;
+}
+.nav-link a:hover {
+  border-color: #333333;
+}
+.btn button {
+  background-color: #4caf50;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  /* background-color:#d5d5d5; */
+}
+.btn button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid white; */
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+}
+.mainleft {
+  width: 80%;
+  color: #d5d5d5ba;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.mainleft p {
+  font-size: 14px;
+}
+.mainleft button {
+  background-color: #4caf50;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.mainleft button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.mainright img {
+  width: 450px;
+  border-radius: 8px;
+}
+.content h2,
+.content h3,
+.content p {
+  margin: 0;
+}
+.content h2 {
+  text-align: center;
+  color: #ffffff;
+}
+.cards {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+.chohor-card {
+  margin: 17px;
+}
+.chohor-card h3,
+p {
+  color: #d5d5d5;
+  
+}
+.chohor-card img {
+  border-radius: 7px;
+}
+.chohor-card button {
+  background-color: #4caf50;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 9px;
+}

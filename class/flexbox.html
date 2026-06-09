@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: black;
+        color: white;
+      }
+     #parent
+     {
+      border: 2px solid white;
+      width: 80vb;
+      height: 500px;
+     }
+      .child {
+        border: 2px solid rosybrown;
+        width: 40px;
+        height: 40px;
+      } 
+      #parent
+      {
+        display: flex;
+        flex-direction: row; /*by default it is row*/
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+         
+        justify-content: center; /*work on main axis
+        /* justify-content: end; */
+        justify-content: space-between;
+         
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <p class="child child-1">1</p>
+      <p class="child child-2">2</p>
+      <p class="child  child-3" >3</p>
+      <p class="child child-4">4</p>
+      <p class="child child-5">5</p>
+      
+    </div>
+  </body>
+</html>
