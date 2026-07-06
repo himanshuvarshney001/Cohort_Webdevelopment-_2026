@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist Example</title>
+</head>
+<body>
+
+    <h2>Select or Type a City</h2>
+
+    <form>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" list="cities" placeholder="City like Mathura">
+
+        <datalist id="cities">
+            <option value="Delhi">
+            <option value="Mumbai">
+            <option value="Bengaluru">
+            <option value="Kolkata">
+            <option value="Chennai">
+            <option value="Hyderabad">
+        </datalist>
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

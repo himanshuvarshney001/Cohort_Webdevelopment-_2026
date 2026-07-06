@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Column Groups</title>
+  </head>
+  <body>
+    <h1>Monthly Report</h1>
+    <!-- Create a table with colgroup -->
+    <table style="border-collapse: collapse; width: 100%; border: 1px solid #ccc;">
+  <!-- Group and style columns at the very top of the table -->
+  <colgroup>
+    <!-- Styles the first column (ID) -->
+    <col style="background-color: #f2f2f2; width: 15%; text-align: center;">
+    <!-- Styles the second column (Product Name) -->
+    <col style="background-color: #ffffff; width: 60%;">
+    <!-- Styles the third column (Price) -->
+    <col style="background-color: #e6f7ff; width: 25%; font-weight: bold;">
+  </colgroup>
+
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th>ID</th>
+      <th>Product Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td>001</td>
+      <td>Wireless Mouse</td>
+      <td>$25.00</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td>002</td>
+      <td>Mechanical Keyboard</td>
+      <td>$85.00</td>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>USB-C Hub</td>
+      <td>$40.00</td>
+    </tr>
+  </tbody>
+</table>
+
+  </body>
+</html>

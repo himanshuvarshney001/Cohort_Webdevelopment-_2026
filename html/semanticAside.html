@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main and Aside Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        main {
+            flex: 3;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Main Content -->
+        <main>
+            <h2>Learning HTML5 Semantic Elements</h2>
+            <p>
+                HTML5 introduced semantic tags such as header, footer,
+                section, article, main, and aside to make web pages
+                more meaningful and accessible.
+            </p>
+
+            <p>
+                The main element contains the primary content of the page.
+                It should contain the most important information for users.
+            </p>
+        </main>
+
+        <!-- Supplementary Content -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">HTML Tutorial</a></li>
+                <li><a href="#">CSS Tutorial</a></li>
+                <li><a href="#">JavaScript Tutorial</a></li>
+            </ul>
+
+            <h3>Quick Tip</h3>
+            <p>
+                Use semantic tags to improve accessibility and SEO.
+            </p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

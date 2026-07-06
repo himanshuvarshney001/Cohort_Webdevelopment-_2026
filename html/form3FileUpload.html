@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Form</title>
+</head>
+<body>
+
+    <h2>File Upload Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Single Image Upload -->
+        <label for="image">Upload Image:</label>
+        <input
+            type="file"
+            id="image"
+            name="image"
+            accept=".jpg,.jpeg,.png,image/*">
+        <br><br>
+
+        <!-- Multiple Document Upload -->
+        <label for="documents">Upload Documents:</label>
+        <input
+            type="file"
+            id="documents"
+            name="documents"
+            accept=".pdf,.doc,.docx"
+            multiple>
+        <br><br>
+
+        <button type="submit">Upload Files</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Blog</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            line-height:1.6;
+        }
+
+        header{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            background:#333;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+        }
+
+        .container{
+            display:flex;
+            max-width:1200px;
+            margin:20px auto;
+            gap:20px;
+            padding:0 20px;
+        }
+
+        main{
+            flex:3;
+        }
+
+        article{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        article header{
+            background:none;
+            color:black;
+            text-align:left;
+            padding:0;
+            margin-bottom:20px;
+        }
+
+        article h2{
+            margin-bottom:10px;
+        }
+
+        aside{
+            flex:1;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+            height:fit-content;
+        }
+
+        aside ul{
+            list-style:none;
+        }
+
+        aside li{
+            margin-bottom:12px;
+        }
+
+        aside a{
+            text-decoration:none;
+            color:#0066cc;
+        }
+
+        section{
+            margin-top:20px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+
+        time{
+            color:gray;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Blog Header -->
+    <header>
+        <h1>Tech Insights Blog</h1>
+        <p>Sharing knowledge about programming and web development</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container">
+
+        <!-- Main Content -->
+        <main>
+
+            <article>
+
+                <header>
+                    <h2>Getting Started with HTML5 Semantic Elements</h2>
+
+                    <p>
+                        Published on
+                        <time datetime="2026-06-24">
+                            June 24, 2026
+                        </time>
+                    </p>
+                </header>
+
+                <section>
+                    <h3>Introduction</h3>
+
+                    <p>
+                        HTML5 introduced semantic elements that provide
+                        meaningful structure to web pages. Instead of using
+                        generic div tags everywhere, developers can use
+                        elements like header, nav, main, article, section,
+                        aside, and footer.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Why Semantic HTML Matters</h3>
+
+                    <p>
+                        Semantic HTML improves accessibility, SEO, and code
+                        readability. Search engines and screen readers can
+                        better understand the purpose of each section.
+                    </p>
+
+                    <ul>
+                        <li>Better accessibility</li>
+                        <li>Improved SEO</li>
+                        <li>Cleaner code structure</li>
+                        <li>Easier maintenance</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Conclusion</h3>
+
+                    <p>
+                        Using semantic elements is a best practice in modern
+                        web development. They help create well-structured,
+                        maintainable, and accessible websites.
+                    </p>
+                </section>
+
+            </article>
+
+        </main>
+
+        <!-- Related Posts Sidebar -->
+        <aside>
+            <h3>Related Posts</h3>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        Understanding CSS Flexbox
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Building Responsive Layouts
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        HTML5 Forms and Validation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Introduction to JavaScript
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tech Insights Blog. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

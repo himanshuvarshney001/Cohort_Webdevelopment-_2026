@@ -1,0 +1,48 @@
+<!-- Create iframes to embed external content like YouTube videos or Google Maps. -->
+ <!-- What is an <iframe>?
+<iframe> stands for Inline Frame.
+It is used to embed another webpage or external content inside your current webpage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Examples</title>
+</head>
+<body>
+
+    <h1>Embedding External Content with Iframes</h1>
+
+    <!-- YouTube Video -->
+    <section>
+        <h2>YouTube Video</h2>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <hr>
+
+    <!-- Google Maps -->
+    <section>
+        <h2>Google Maps Location</h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+</body>
+</html>
