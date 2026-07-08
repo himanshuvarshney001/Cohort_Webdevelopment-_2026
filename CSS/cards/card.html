@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Eater&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        /* border: 2px solid black; */
+        width: 600px;
+        height: 600px;
+        margin: 50px;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+      .image {
+        width: 97%;
+        height: 60%;
+        margin: 10px;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+      .container h1,
+      p {
+        text-align: center;
+        margin: 10px;
+      }
+      .btn {
+        cursor: pointer;
+        padding: 10px 40px 10px 40px;
+        /* border: 3px solid black; */
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-family: "Eater", serif;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #132dae6f;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/statue.jpg" class="image" alt="image" />
+      <h1>This is statue of liberety</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+        inventore eaque maiores expedita, sint nulla odio provident explicabo
+        blanditiis velit ut excepturi minus pariatur voluptate fuga, nostrum,
+        nemo fugit! Distinctio?
+      </p>
+      <button class="btn">Explore more</button>
+    </div>
+  </body>
+</html>

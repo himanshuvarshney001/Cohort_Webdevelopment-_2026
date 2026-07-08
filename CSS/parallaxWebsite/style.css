@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* z-index: -1; */
+}
+.forground, .background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* z-index: -1; */
+}
+.background{
+    transform: translatez(-40px) scale(5);
+}
+.forground{
+    transform: translatez(-20px) scale(3);
+}
+.tittle{
+    position: absolute;
+    /* border: 2px solid black; */
+    font-size: xxx-large;
+}

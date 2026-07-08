@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container
+        {
+            box-sizing: border-box;
+            position: relative;
+            width: 700px;
+            height: 400px;
+            margin: auto;
+            margin-top: 200px;
+            background-image: url(cards/images/mountain.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .text{
+            position: absolute;
+            color: bisque;
+        }
+        .center
+        {
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           /* border: 2px solid black; */
+           transition: 3ms;
+        }
+        .left{
+            top: 0;
+            left: 0;
+        }
+        .right
+        {
+            top: 0;
+            right: 0;
+            color: black;
+        }
+        .bottom{
+            bottom: 0;
+            left: 0;
+        }
+        .top{
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text center">center</h1>
+        <h1 class="text left">left</h1>
+        <h1 class="text right">right</h1>
+        <h1 class="text bottom">bottom</h1>
+        <h1 class="text top">bottom</h1>
+    </div>
+</body>
+</html>
