@@ -1,0 +1,50 @@
+<!-- math function in CSS
+calc() etc
+variable is also there in CSS
+syntax for variable --dark-red:red;
+how to use it color: var(--dark-red);
+major time declared in root element :root{ }
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #514f4f;
+            border: 2px solid black;
+            display: flex;
+        }
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(103, 100, 100);
+            margin: 20px;
+            background-color: rgb(137, 133, 133);
+            transition: transform ease-in 2s;
+            /* transition-property: background-color; */
+            /* transition-delay: 2s; */
+        }
+        .box:hover
+        {
+            /* transform: translateX(300px);   */
+            transform: translateX(360px) scale(1.3) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>
