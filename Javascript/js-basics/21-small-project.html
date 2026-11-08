@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+        #parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .user{
+            margin: 10px;
+            text-align: center;
+            width: 250px;
+            padding: 5px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            transition: transform .5s ease-in;
+        }
+        .user:hover{
+            transform: scale(1.2);
+        }
+        .user-photo{
+            position: relative;
+        }
+        img{
+            border-radius: 4px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .user h2{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 10px 8px;
+            font-size: 18px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 0 0 4px 4px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s ease;
+        }
+        .user:hover h2{
+            opacity: 1;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Git Hub users</h1>
+    <div id="parent">
+
+    </div>
+    <script>
+        (async function(){
+            fetch("https://api.github.com/users",{method:'GET'})
+            .then(Response=>Response.json())
+            .then(data=>{
+                const parent=document.getElementById("parent");
+                for(let ele of data){
+                    const div=document.createElement("div");
+                    div.classList.add("user");
+                    const photo=document.createElement("div");
+                    photo.classList.add("user-photo");
+                    const img=document.createElement("img");
+                    img.src=ele.avatar_url;
+                    const userName=document.createElement("h2");
+                    userName.textContent=ele.login;
+                    const anchor=document.createElement("a");
+                    anchor.href=ele.html_url;
+                    anchor.textContent="visit profile";
+
+                    photo.append(img,userName);
+                    div.append(photo,anchor);
+                    parent.append(div);
+
+                }
+            })
+        })();
+    </script>
+</body>
+</html>
